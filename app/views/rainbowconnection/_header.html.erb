@@ -1,0 +1,143 @@
+<!--header-->
+<div class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html"><%= image_tag("logo1.png", :class => "img-responsive", :style => "box-shadow:1px 1px 10px 1px #075396 ") %></a>
+    </div>
+    <div class="head-right">
+
+      <div class="top-nav">
+        <span class="menu"><%= image_tag("menu.png") %> </span>
+        <% case (@page_title) %>
+        <% when "index" %>
+            <ul>
+              <li class="active"><%= link_to("Home", :controller => 'rainbowconnection', :action => 'index') %></li>
+              <li class="dropdown"><a href="/rainbowconnection/about" role="button" aria-haspopup="true"
+                                      aria-expanded="false">About
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/rainbowconnection/company">Company</a></li>
+                  <li><a href="/rainbowconnection/ceo">CEO/ Founder</a></li>
+                  <li><a href="/rainbowconnection/about">The Team</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#" role="button" aria-haspopup="true" aria-expanded="false">Services
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/rainbowconnection/services">Business Systems and Solutions</a></li>
+                  <li><a href="#">Office Automation</a></li>
+                  <li><a href="#">Business IT assets</a></li>
+                  <li><a href="#">Broadcasting Systems</a></li>
+                  <li><a href="#">Mobile Computing Platforms</a></li>
+                  <li><a href="#">Business Support Services</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Technologies</a></li>
+              <li><a href="#">Downloads</a></li>
+              <li><%= link_to("Contact Us", :controller => 'rainbowconnection', :action => 'contact') %></li>
+
+              <div class="clearfix"></div>
+            </ul>
+        <% when "about" %>
+            <ul>
+              <li><%= link_to("Home", :controller => 'rainbowconnection', :action => 'index') %></li>
+              <li class="dropdown"><a href="/rainbowconnection/about" class="active" role="button" aria-haspopup="true"
+                                      aria-expanded="false">About
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/rainbowconnection/company">Company</a></li>
+                  <li><a href="/rainbowconnection/ceo">CEO/ Founder</a></li>
+                  <li><a href="/rainbowconnection/about">The Team</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#" role="button" aria-haspopup="true" aria-expanded="false">Services
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/rainbowconnection/services">Business Systems and Solutions</a></li>
+                  <li><a href="#">Office Automation</a></li>
+                  <li><a href="#">Business IT assets</a></li>
+                  <li><a href="#">Broadcasting Systems</a></li>
+                  <li><a href="#">Mobile Computing Platforms</a></li>
+                  <li><a href="#">Business Support Services</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Technologies</a></li>
+              <li><a href="#">Downloads</a></li>
+              <li><%= link_to("Contact Us", :controller => 'rainbowconnection', :action => 'contact') %></li>
+              <div class="clearfix"></div>
+            </ul>
+        <% when "serv1" %>
+            <ul>
+              <li><%= link_to("Home", :controller => 'rainbowconnection', :action => 'index') %></li>
+              <li class="dropdown"><a href="/rainbowconnection/about" role="button" aria-haspopup="true"
+                                      aria-expanded="false">About
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/rainbowconnection/company">Company</a></li>
+                  <li><a href="/rainbowconnection/ceo">CEO/ Founder</a></li>
+                  <li><a href="/rainbowconnection/about">CEO/ Founder</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#" class="active" role="button" aria-haspopup="true" aria-expanded="false">Services
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/rainbowconnection/services">Business Systems and Solutions</a></li>
+                  <li><a href="#">Office Automation</a></li>
+                  <li><a href="#">Business IT assets</a></li>
+                  <li><a href="#">Broadcasting Systems</a></li>
+                  <li><a href="#">Mobile Computing Platforms</a></li>
+                  <li><a href="#">Business Support Services</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Technologies</a></li>
+              <li><a href="#">Downloads</a></li>
+              <li><%= link_to("Contact Us", :controller => 'rainbowconnection', :action => 'contact') %></li>
+              <div class="clearfix"></div>
+            </ul>
+        <% when "contact" %>
+            <ul>
+              <li><%= link_to("Home", :controller => 'rainbowconnection', :action => 'index') %></li>
+              <li class="dropdown"><a href="/rainbowconnection/about" role="button" aria-haspopup="true"
+                                      aria-expanded="false">About
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/rainbowconnection/company">Company</a></li>
+                  <li><a href="/rainbowconnection/ceo">CEO/ Founder</a></li>
+                  <li><a href="/rainbowconnection/about">CEO/ Founder</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#" role="button" aria-haspopup="true" aria-expanded="false">Services
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/rainbowconnection/services">Business Systems and Solutions</a></li>
+                  <li><a href="#">Office Automation</a></li>
+                  <li><a href="#">Business IT assets</a></li>
+                  <li><a href="#">Broadcasting Systems</a></li>
+                  <li><a href="#">Mobile Computing Platforms</a></li>
+                  <li><a href="#">Business Support Services</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Technologies</a></li>
+              <li><a href="#">Downloads</a></li>
+              <li class="active"><%= link_to("Contact Us", :controller => 'rainbowconnection', :action => 'contact') %></li>
+              <div class="clearfix"></div>
+            </ul>
+        <% end %>
+        <!--script-->
+        <script>
+            $("span.menu").click(function () {
+                $(".top-nav ul").slideToggle(500, function () {
+                });
+            });
+        </script>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+</div>
+<!--//header-->

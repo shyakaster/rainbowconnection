@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails rainbowconnection: development" uuid="34f55124-97bf-47b8-a57c-50fa52bf600c">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails rainbowconnection: test" uuid="1096700f-2cf8-4e20-8de8-fac831a9aedc">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails rainbowconnection: production" uuid="4a82c482-8ae8-4a2f-ba2e-f3e4f86c69fd">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

@@ -1,0 +1,2 @@
+module RainbowconnectionHelper
+end

@@ -1,0 +1,266 @@
+<% @page_title="index" %>
+<div class="banner">
+  <div class="banner-1"></div>
+  <div class="container">
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true
+            });
+        });
+    </script>
+    <div class="banner-top">
+      <div class="col-sm-6 head-banner">
+        <div class="slider">
+          <div class="callbacks_container">
+            <ul class="rslides" id="slider">
+              <li>
+                <h3>Technology</h3>
+
+                <p>Partnership with world-class manufacturers and developers to be able not only assure performance but also tailored to unique customer
+                  realities and needs.</p>
+
+                <div class="readmore">
+                  <a href="about.html">Read More<i class="glyphicon glyphicon-"> </i></a>
+                </div>
+              </li>
+              <li>
+                <h3>People</h3>
+
+                <p>A truly able team of professionals tooled with knowledge to be able to conscientiously deliver.</p>
+
+                <div class="readmore">
+                  <a href="about.html">Read More<i class="glyphicon glyphicon-menu-right"> </i></a>
+                </div>
+              </li>
+              <li>
+                <h3>Solutions</h3>
+
+                <p>RCL maintains a proactive work attitude, which focused on a systematic approach in the
+                  focuses on right solutions.</p>
+
+                <div class="readmore">
+                  <a href="about.html">Read More<i class="glyphicon glyphicon-menu-right"> </i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 banner-head1">
+        <%= image_tag("softdevelop.png", :class => "img-responsive") %>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!--content-->
+<div class="content">
+<div class="container">
+  <div class="content-top-top">
+    <div class="content-top">
+      <h2>Our Values</h2>
+
+      <div class="col-md-4 wel">
+        <div class="content-ic">
+          <i class="glyphicon glyphicon-cog"></i>
+        </div>
+        <div class="content-text">
+          <h5>Integrity </h5>
+
+          <p>Core to RCL is our firm belief, to be true to
+            ourselves and to the customer. We don’t
+            compromise on deliverables we commit to what
+            we promise as what we are.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-md-4 wel">
+        <div class="content-ic">
+          <i class="glyphicon glyphicon-user"></i>
+        </div>
+        <div class="content-text">
+          <h5>Customer-Supreme </h5>
+
+          <p>Our dierentiator is to
+            focus with assiduously on the key business
+            objectives derived from the customer as the core
+            foundation of our activities.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-md-4 wel">
+        <div class="content-ic">
+          <i class="glyphicon glyphicon-time"></i>
+        </div>
+        <div class="content-text">
+          <h5>Timely Delivery </h5>
+
+          <p>We guarantee on time delivery understanding the pressures and urgency for getting your Systems or
+            applications on the road as quickly as
+            possible </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="content-top">
+      <div class="col-md-4 wel">
+        <div class="content-ic">
+          <i class="glyphicon glyphicon-leaf"></i>
+        </div>
+        <div class="content-text">
+          <h5>Customer-Satisfaction </h5>
+
+          <p>RCL
+            prides itself in ensuring that the product, service,
+            technology meets the acclaim of the customer.
+            Our commitment is to ensure a wining presence
+            with the customer for the entire lifecycle of the
+            business win.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-md-4 wel">
+        <div class="content-ic">
+          <i class="glyphicon glyphicon-erase"></i>
+        </div>
+        <div class="content-text">
+          <h5>Value for Money</h5>
+
+          <p>We tailor
+            solutions that truly provide value for money for
+            the customer through engagement and
+            evaluation of available options.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-md-4 wel">
+        <div class="content-ic">
+          <i class="glyphicon glyphicon-grain"></i>
+        </div>
+        <div class="content-text">
+          <h5>Current Technologies </h5>
+
+          <p>We collaborate with our clients to deliver customized solutions that result in superior integration of a
+            client’s IT systems, including information, security, surveillance and safety.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <!---->
+</div>
+<!---->
+<div class="content-middle" style="background:#3f7fd6;">
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+      $(function () {
+          SyntaxHighlighter.all();
+      });
+      $(window).load(function () {
+          $('.flexslider').flexslider({
+              animation: "slide",
+              start: function (slider) {
+                  $('body').removeClass('loading');
+              }
+          });
+      });
+  </script>
+  <!-- FlexSlider -->
+  <div class="col-md-6 content-middle1">
+    <section class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <%= image_tag("lab.jpg", :class => "img-responsive") %>
+          </li>
+          <li>
+            <%= image_tag("slide2.jpg", :class => "img-responsive") %>
+          </li>
+          <li>
+            <%= image_tag("slide3.jpg", :class => "img-responsive") %>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="col-md-6 content-middle2">
+    <h3>About</h3>
+
+    <p>Rainbow Connections is a Ugandan Information Technology solutions provider focusing on delivering
+      custom-tailored solutions to our clientele. Established in March 1999, Rainbow Connections has its roots
+      in decades of experience in the ICT and Business sector in Uganda through its founders and was establish
+      to provide cutting edge business solutions in IT including Application Delivery Solutions, Cloud
+      Computing Platforms, Mobile Applications & Field Automation Solutions, Information Security
+      Provisioning, Oce Automation Solutions and Connectivity Platforms.</p>
+    <ul>
+      <li><a href="#"><i class="glyphicon glyphicon-ok"></i>Business Systems and Solutions</a>
+      </li>
+      <li><a href="#"><i class="glyphicon glyphicon-ok"></i>Hospitality Management Information System</a></li>
+      <li><a href="#"><i class="glyphicon glyphicon-ok"></i>Electronic Document & Content Management System</a></li>
+    </ul>
+
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!---->
+<div class="events">
+  <div class="container">
+    <h2>Our Solutions</h2>
+
+    <div class="events-top">
+      <div class="col-sm-4 top-event">
+        <a href="single.html"><%= image_tag("web.jpg", :class => "img-responsive") %></a>
+        <h4><a href="single.html">Web Applications</a></h4>
+
+        <p>We have built different types of web based products, portals and websites. </p>
+      </div>
+      <div class="col-sm-4 top-event">
+        <a href="single.html"><%= image_tag("mobile.jpg", :class => "img-responsive") %></a>
+        <h4><a href="single.html">Mobile Applications</a></h4>
+
+        <p>We have developed native consumer and enterprise apps for mobile platforms including iOS and Android. </p>
+      </div>
+      <div class="col-sm-4 top-event">
+        <a href="single.html"><%= image_tag("ussd.jpg", :class => "img-responsive") %></a>
+        <h4><a href="single.html">USSD Applications</a></h4>
+
+        <p>We work with you to realize it and manage the process from Conception to Delivery. </p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="events-top">
+      <div class="col-sm-4 top-event">
+        <a href="single.html"><%= image_tag("desktop.jpg", :class => "img-responsive") %></a>
+        <h4><a href="single.html">Desktop Applications</a></h4>
+
+
+        <p>We nurture best practices in desktop application development for the market sensation. </p>
+      </div>
+      <div class="col-sm-4 top-event">
+        <a href="single.html"><%= image_tag("braindev.jpg", :class => "img-responsive") %></a>
+        <h4><a href="single.html">Design process</a></h4>
+
+
+        <p>Intriging and awesome practices through all our application developments</p>
+      </div>
+      <div class="col-sm-4 top-event">
+        <a href="single.html"><%= image_tag("testing.jpg", :class => "img-responsive") %></a>
+        <h4><a href="single.html">Application Testing</a></h4>
+
+        <p>Delivering high-quality applications that seamlessly serve their end customers. </p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!---->
+</div>
